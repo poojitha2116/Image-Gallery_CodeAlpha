@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/15e4faf031.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1> Our Image Gallery</h1>
+    <div class="full-img" id="fullImgBox">
+      <img src="https://th.bing.com/th/id/OIP.0og6_O94Qy3jc3bcVs0-OgHaEp?rs=1&pid=ImgDetMain&cb=idpwebpc1" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+      </div>
+    <div class="img-gallery">
+      <img src="https://th.bing.com/th/id/OIP.0og6_O94Qy3jc3bcVs0-OgHaEp?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP.t7GtMup6Mz1l_Tp7PgLlggHaE7?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP.nuEyJo7x1FPwri419ldTiQHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP.UehiVn3XbPNEveF8JaYpwQHaEd?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP.ITBQFpIwXbDWGZ4bTlf-vQHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP._uhDYemNYjBtjwc5BOSAzwHaFj?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP.l47apCN4kyJhQG2whqr7QQHaEK?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://th.bing.com/th/id/OIP.tmpfpmag9MHD9CqzFL0T9AHaE9?rs=1&pid=ImgDetMain&cb=idpwebpc1", width = 200px, height = 200px onclick="openFullImg(this.src)">
+      <img src="https://2.bp.blogspot.com/-K9uqlDec3o0/WZ6jF_s1JQI/AAAAAAAANFI/lTXFrEN6t6sAj51-Lo5lwQqX1CZH5eH8gCLcBGAs/s1600/Predator-Beautiful-Fur-sumateran-Tiger-rainforest-animal.jpg", width = 200px, height = 200px onclick="openFullImg(this.src)">
+    </div>
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg(){
+        fullImgBox.style.display = "none";
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
